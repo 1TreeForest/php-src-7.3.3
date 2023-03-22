@@ -1800,6 +1800,8 @@ int main(int argc, char *argv[])
 	ZEND_TSRMLS_CACHE_UPDATE();
 #endif
 
+	witcher_cgi_trace_init("__AFL_SHM_ID");
+
 	zend_signal_startup();
 
 #ifdef ZTS

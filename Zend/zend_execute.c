@@ -3400,6 +3400,8 @@ static zend_never_inline int ZEND_FASTCALL zend_quick_check_constant(
 	return _zend_quick_get_constant(key, 0, 1 OPLINE_CC EXECUTE_DATA_CC);
 } /* }}} */
 
+#include "../Zend/zend_witcher_trace.h"
+
 #ifdef ZEND_VM_TRACE_HANDLERS
 # include "zend_vm_trace_handlers.h"
 #elif defined(ZEND_VM_TRACE_MAP)
